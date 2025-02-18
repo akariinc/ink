@@ -1888,6 +1888,9 @@ video {
 .\[animation-duration\:200\]{
   animation-duration: 200;
 }
+.\[key\:string\]{
+  key: string;
+}
 :root {
   --font-sans: "" ;
   --background: 0 0% 100%;
@@ -6552,6 +6555,9 @@ video {
 }
 .\[animation-duration\:200\]{
   animation-duration: 200;
+}
+.\[key\:string\]{
+  key: string;
 }
 .\*\:\*\:fill-current > * > *{
   fill: currentColor;
