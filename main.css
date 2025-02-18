@@ -16895,7 +16895,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   opacity: 0.6;
 }
 :root {
-  --serif-font: "DM Serif Display";
+  --serif-font: "Cormorant Infant";
   --sans-serif-font: Outfit;
   --monospace-font: "Red Hat Mono";
   --condensed-serif-font: "Roboto Condensed";
@@ -16914,58 +16914,58 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --mono-small-font-weight: normal;
   --mono-small-font-size: 1.25rem;
   --mono-small-letter-spacing: -0.045em;
-  --mono-small-line-height: 1.23em;
+  --mono-small-line-height: 1.47em;
   --sans-small-font-family: "Albert Sans";
   --sans-small-text-transform: none;
   --sans-small-font-weight: normal;
   --sans-small-font-size: 1.25rem;
   --sans-small-letter-spacing: -0.0075em;
-  --sans-small-line-height: 1.16em;
+  --sans-small-line-height: 1.44em;
   --serif-small-font-family: serif;
   --serif-small-text-transform: none;
   --serif-small-font-weight: normal;
   --serif-small-font-size: 1.125rem;
   --serif-small-letter-spacing: 0.03em;
-  --serif-small-line-height: 1.22em;
+  --serif-small-line-height: 1.69em;
   --mono-small-bold-font-family: "Red Hat Mono";
   --mono-small-bold-text-transform: none;
   --mono-small-bold-font-weight: bold;
   --mono-small-bold-font-size: 1.225rem;
   --mono-small-bold-letter-spacing: -0.015em;
-  --mono-small-bold-line-height: 1.47em;
+  --mono-small-bold-line-height: 1.49em;
   --sans-small-bold-font-family: "Albert Sans";
   --sans-small-bold-text-transform: none;
   --sans-small-bold-font-weight: bold;
   --sans-small-bold-font-size: 1.225rem;
   --sans-small-bold-letter-spacing: -0.0075em;
-  --sans-small-bold-line-height: 1.34em;
+  --sans-small-bold-line-height: 1.48em;
   --serif-small-bold-font-family: serif;
   --serif-small-bold-text-transform: none;
   --serif-small-bold-font-weight: 500;
   --serif-small-bold-font-size: 1.125rem;
   --serif-small-bold-letter-spacing: 0.01em;
-  --serif-small-bold-line-height: 1.22em;
-  --mono-medium-font-family: "Red Hat Mono";
+  --serif-small-bold-line-height: 1.66em;
+  --mono-medium-font-family: "DM Mono";
   --mono-medium-text-transform: none;
   --mono-medium-font-weight: normal;
   --mono-medium-font-size: 1.4rem;
   --mono-medium-letter-spacing: -0.0225em;
-  --mono-medium-line-height: 1.2em;
+  --mono-medium-line-height: 1.66em;
   --sans-medium-font-family: "Albert Sans";
   --sans-medium-text-transform: none;
   --sans-medium-font-weight: normal;
   --sans-medium-font-size: 1.475rem;
-  --sans-medium-letter-spacing: 0.01em;
-  --sans-medium-line-height: 1.27em;
+  --sans-medium-letter-spacing: 0em;
+  --sans-medium-line-height: 1.35em;
   --serif-medium-font-family: serif;
   --serif-medium-text-transform: none;
   --serif-medium-font-weight: normal;
   --serif-medium-font-size: 1.375rem;
   --serif-medium-letter-spacing: 0.0075em;
-  --serif-medium-line-height: 1.29em;
-  --mono-medium-bold-font-family: "DM Mono";
+  --serif-medium-line-height: 1.61em;
+  --mono-medium-bold-font-family: "Red Hat Mono";
   --mono-medium-bold-text-transform: none;
-  --mono-medium-bold-font-weight: 700;
+  --mono-medium-bold-font-weight: 600;
   --mono-medium-bold-font-size: 1.475rem;
   --mono-medium-bold-letter-spacing: 0em;
   --mono-medium-bold-line-height: 1.48em;
@@ -16973,50 +16973,50 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --sans-medium-bold-text-transform: none;
   --sans-medium-bold-font-weight: 600;
   --sans-medium-bold-font-size: 1.525rem;
-  --sans-medium-bold-letter-spacing: 0.0225em;
-  --sans-medium-bold-line-height: 1.32em;
+  --sans-medium-bold-letter-spacing: 0em;
+  --sans-medium-bold-line-height: 1.42em;
   --serif-medium-bold-font-family: serif;
   --serif-medium-bold-text-transform: none;
   --serif-medium-bold-font-weight: bold;
   --serif-medium-bold-font-size: 1.475rem;
   --serif-medium-bold-letter-spacing: 0.0275em;
-  --serif-medium-bold-line-height: 1.29em;
+  --serif-medium-bold-line-height: 1.51em;
   --mono-large-font-family: "Red Hat Mono";
   --mono-large-text-transform: none;
   --mono-large-font-weight: normal;
   --mono-large-font-size: 2.65rem;
   --mono-large-letter-spacing: 0em;
-  --mono-large-line-height: 1.21em;
-  --sans-large-font-family: Outfit;
+  --mono-large-line-height: 1.38em;
+  --sans-large-font-family: "Albert Sans";
   --sans-large-text-transform: none;
   --sans-large-font-weight: normal;
   --sans-large-font-size: 2.6rem;
   --sans-large-letter-spacing: -0.0025em;
-  --sans-large-line-height: 1.15em;
+  --sans-large-line-height: 1.44em;
   --serif-large-font-family: serif;
   --serif-large-text-transform: none;
   --serif-large-font-weight: normal;
   --serif-large-font-size: 2.75rem;
   --serif-large-letter-spacing: 0.035em;
-  --serif-large-line-height: 1.32em;
+  --serif-large-line-height: 1.53em;
   --mono-large-bold-font-family: "Space Mono";
   --mono-large-bold-text-transform: none;
   --mono-large-bold-font-weight: bold;
   --mono-large-bold-font-size: 2.275rem;
   --mono-large-bold-letter-spacing: -0.02em;
-  --mono-large-bold-line-height: 1.18em;
-  --sans-large-bold-font-family: Outfit;
+  --mono-large-bold-line-height: 1.5em;
+  --sans-large-bold-font-family: "Albert Sans";
   --sans-large-bold-text-transform: none;
   --sans-large-bold-font-weight: bold;
   --sans-large-bold-font-size: 2.65rem;
   --sans-large-bold-letter-spacing: 0.03em;
-  --sans-large-bold-line-height: 1.28em;
+  --sans-large-bold-line-height: 1.41em;
   --serif-large-bold-font-family: "DM Serif Display";
   --serif-large-bold-text-transform: none;
   --serif-large-bold-font-weight: bold;
   --serif-large-bold-font-size: 2.975rem;
   --serif-large-bold-letter-spacing: 0.0525em;
-  --serif-large-bold-line-height: 1.3em;
+  --serif-large-bold-line-height: 1.51em;
   --chip-s-padding-x: 0.53rem;
   --chip-s-padding-y: 0.3rem;
   --chip-s-padding: var(--chip-s-padding-x) var(--chip-s-padding-y);
@@ -17253,24 +17253,24 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --v-list-m-padding: var(--v-list-m-padding-x) var(--v-list-m-padding-y);
   --v-list-m-gap: 0.4rem;
   --v-list-m-size: 1.8rem;
-  --h-list-s-padding-x: 0.4rem;
-  --h-list-s-padding-y: 0.4rem;
+  --h-list-s-padding-x: 0.57rem;
+  --h-list-s-padding-y: 0.38rem;
   --h-list-s-padding: var(--h-list-s-padding-x) var(--h-list-s-padding-y);
-  --h-list-s-gap: 0.4rem;
-  --h-list-m-padding-x: 0.4rem;
-  --h-list-m-padding-y: 0.4rem;
+  --h-list-s-gap: 0.82rem;
+  --h-list-m-padding-x: 0.62rem;
+  --h-list-m-padding-y: 0.63rem;
   --h-list-m-padding: var(--h-list-m-padding-x) var(--h-list-m-padding-y);
   --h-list-m-gap: 0.4rem;
-  --v-gap-xs: 0.5rem;
-  --v-gap-s: 0.68rem;
-  --v-gap-m: 0.71rem;
-  --v-gap-l: 1.06rem;
-  --v-gap-xl: 1.25rem;
-  --h-gap-xs: 0.5rem;
-  --h-gap-s: 0.76rem;
-  --h-gap-m: 1.12rem;
-  --h-gap-l: 2.38rem;
-  --h-gap-xl: 3rem;
+  --v-gap-xs: 0.82rem;
+  --v-gap-s: 1.68rem;
+  --v-gap-m: 1.83rem;
+  --v-gap-l: 3rem;
+  --v-gap-xl: 3.5rem;
+  --h-gap-xs: 0.85rem;
+  --h-gap-s: 2.8rem;
+  --h-gap-m: 2.89rem;
+  --h-gap-l: 3.21rem;
+  --h-gap-xl: 4.23rem;
 }
 
 .border {
@@ -19682,6 +19682,35 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   margin-right: -0.4rem;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.quote {
+  position: relative;
+}
+.quote::before {
+  content: "";
+  position: absolute;
+  top: 0.4rem;
+  bottom: 0rem;
+  display: block;
+  width: 1.5rem;
+  border-left-width: 2px;
+  border-left-style: solid;
+  left: -2rem;
+}
+.quote::before.fg {
+  border-left-color: var(--fg-color-a);
+}
+.quote::before.fg-dark {
+  border-left-color: var(--fg-dark-color-a);
+}
+
+.bold {
+  font-style: bold;
+}
+
 .styleguide-page {
   padding: 60px 40px;
   margin: 0 auto;
@@ -19704,6 +19733,32 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   }
 }
 .is-spWide .styleguide-page {
+  padding: 20px 40px;
+  width: 100%;
+}
+
+.typography-page {
+  padding: 60px 40px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+@media only screen and (max-width: 768px) {
+  .typography-page {
+    padding: 40px 40px;
+    width: 100%;
+  }
+}
+.is-spWide .typography-page {
+  padding: 40px 40px;
+  width: 100%;
+}
+@media only screen and (max-width: 640px) {
+  .typography-page {
+    padding: 20px 40px;
+    width: 100%;
+  }
+}
+.is-spWide .typography-page {
   padding: 20px 40px;
   width: 100%;
 }
