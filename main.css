@@ -20345,6 +20345,48 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .fixed-container.w200 {
   width: 200px;
 }
+.fixed-container.w250 {
+  width: 250px;
+}
+.fixed-container.w300 {
+  width: 300px;
+}
+.fixed-container.w350 {
+  width: 350px;
+}
+.fixed-container.w400 {
+  width: 400px;
+}
+.fixed-container.w450 {
+  width: 450px;
+}
+.fixed-container.w500 {
+  width: 500px;
+}
+.fixed-container.w550 {
+  width: 550px;
+}
+.fixed-container.w600 {
+  width: 600px;
+}
+.fixed-container.w650 {
+  width: 650px;
+}
+.fixed-container.w700 {
+  width: 700px;
+}
+.fixed-container.w750 {
+  width: 750px;
+}
+.fixed-container.w800 {
+  width: 800px;
+}
+.fixed-container.w850 {
+  width: 850px;
+}
+.fixed-container.w900 {
+  width: 900px;
+}
 .fixed-container.h20 {
   height: 20px;
 }
@@ -20854,6 +20896,33 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .specimen-container.w450 {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
+.specimen-container.w500 {
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.specimen-container.w550 {
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+}
+.specimen-container.w600 {
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+.specimen-container.w650 {
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+}
+.specimen-container.w700 {
+  grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
+}
+.specimen-container.w750 {
+  grid-template-columns: repeat(auto-fill, minmax(750px, 1fr));
+}
+.specimen-container.w800 {
+  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
+}
+.specimen-container.w850 {
+  grid-template-columns: repeat(auto-fill, minmax(850px, 1fr));
+}
+.specimen-container.w900 {
+  grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+}
 .specimen-container.w8p {
   grid-template-columns: repeat(auto-fill, minmax(8.333333%, 1fr));
 }
@@ -21340,6 +21409,25 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .user-select-none {
   -webkit-user-select: none;
           user-select: none;
+}
+
+:root {
+  --mat-autocomplete-container-shape: var(--chip-l-corner-radius);
+  --mat-autocomplete-container-elevation-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --mat-autocomplete-background-color: var(--bg-color);
+}
+
+.mat-mdc-autocomplete-panel {
+  padding: var(--v-gap-xs) 0 !important;
+}
+
+.mat-mdc-option {
+  min-height: 0 !important;
+  padding: var(--v-gap-xs) var(--h-gap-xs) !important;
+}
+
+.mat-mdc-option-active {
+  background-color: var(--bg-color-a) !important;
 }
 @charset "UTF-8";
 /*
