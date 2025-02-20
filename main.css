@@ -19738,6 +19738,10 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   font-style: bold;
 }
 
+.disabled {
+  opacity: 0.5;
+}
+
 .styleguide-page {
   padding: 60px 40px;
   margin: 0 auto;
@@ -21418,27 +21422,12 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   /*
    * Chips
    */
-  --mdc-chip-container-shape-radius: var(--chip-s-corner-radius);
-  --mdc-chip-with-avatar-avatar-shape-radius: var(--chip-s-corner-radius);
-  --mdc-chip-outline-width: 1px;
-  --mdc-chip-outline-color: var(--fg-color-a);
+  /* Autocomplete can't be customized by component scope */
   --mat-autocomplete-container-shape: var(--chip-l-corner-radius);
   --mat-autocomplete-container-elevation-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.4);
   --mat-autocomplete-background-color: var(--bg-color);
-  --mdc-filled-text-field-container-shape: var(--chip-l-corner-radius);
-  --mdc-filled-text-field-container-color: var(--bg-color-a);
-  --mdc-filled-text-field-input-text-placeholder-color: var(--fg-color-a);
-  --mdc-outlined-text-field-outline-width: 1px;
-  --mdc-outlined-text-field-focus-outline-width: 1px;
-  --mdc-outlined-text-field-container-shape: var(--chip-l-corner-radius);
-  --mdc-outlined-text-field-focus-outline-color: var(--fg);
-  --mdc-outlined-text-field-input-text-placeholder-color: var(--fg-color-a);
-  --mdc-outlined-text-field-outline-color: var(--fg-color-a);
-  --mat-form-field-container-vertical-padding: calc(var(--button-m-padding-y) - 1px);
-}
-:root .mdc-text-field--outlined {
-  padding-left: var(--h-gap-xs) !important;
-  padding-right: var(--h-gap-xs) !important;
+  /* This is the only way to reset .mat-mdc-option */
+  /* Focus state by keyboard up and down */
 }
 :root .mat-mdc-autocomplete-panel {
   padding: var(--v-gap-xs) 0 !important;
@@ -21452,6 +21441,9 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 :root .mat-mdc-option-active {
   background-color: var(--bg-color-a) !important;
+}
+:root .mat-mdc-chip-set .mdc-evolution-chip {
+  margin: 2px 0 2px 8px !important;
 }
 @charset "UTF-8";
 /*
