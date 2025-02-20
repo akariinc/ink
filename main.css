@@ -21411,22 +21411,46 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
           user-select: none;
 }
 
+/*
+ * For chips and autocomplete
+ */
 :root {
+  /*
+   * Chips
+   */
+  --mdc-chip-container-shape-radius: var(--chip-s-corner-radius);
+  --mdc-chip-with-avatar-avatar-shape-radius: var(--chip-s-corner-radius);
+  --mdc-chip-outline-width: 1px;
+  --mdc-chip-outline-color: var(--fg-color-a);
   --mat-autocomplete-container-shape: var(--chip-l-corner-radius);
-  --mat-autocomplete-container-elevation-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --mat-autocomplete-container-elevation-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.4);
   --mat-autocomplete-background-color: var(--bg-color);
+  --mdc-filled-text-field-container-shape: var(--chip-l-corner-radius);
+  --mdc-filled-text-field-container-color: var(--bg-color-a);
+  --mdc-filled-text-field-input-text-placeholder-color: var(--fg-color-a);
+  --mdc-outlined-text-field-outline-width: 1px;
+  --mdc-outlined-text-field-focus-outline-width: 1px;
+  --mdc-outlined-text-field-container-shape: var(--chip-l-corner-radius);
+  --mdc-outlined-text-field-focus-outline-color: var(--fg);
+  --mdc-outlined-text-field-input-text-placeholder-color: var(--fg-color-a);
+  --mdc-outlined-text-field-outline-color: var(--fg-color-a);
+  --mat-form-field-container-vertical-padding: calc(var(--button-m-padding-y) - 1px);
 }
-
-.mat-mdc-autocomplete-panel {
+:root .mdc-text-field--outlined {
+  padding-left: var(--h-gap-xs) !important;
+  padding-right: var(--h-gap-xs) !important;
+}
+:root .mat-mdc-autocomplete-panel {
   padding: var(--v-gap-xs) 0 !important;
 }
-
-.mat-mdc-option {
+:root .mat-mdc-option {
   min-height: 0 !important;
   padding: var(--v-gap-xs) var(--h-gap-xs) !important;
 }
-
-.mat-mdc-option-active {
+:root .mat-mdc-option:hover {
+  background-color: var(--bg-color-a) !important;
+}
+:root .mat-mdc-option-active {
   background-color: var(--bg-color-a) !important;
 }
 @charset "UTF-8";
