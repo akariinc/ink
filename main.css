@@ -19742,6 +19742,18 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   opacity: 0.5;
 }
 
+.fit-content {
+  flex-basis: fit-content;
+}
+
+.flex-0 {
+  flex: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
 .styleguide-page {
   padding: 60px 40px;
   margin: 0 auto;
@@ -21434,10 +21446,13 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 :root .mat-mdc-option {
   min-height: 0 !important;
-  padding: var(--v-gap-xs) var(--h-gap-xs) !important;
+  padding: 0 !important;
 }
 :root .mat-mdc-option:hover {
   background-color: var(--bg-color-a) !important;
+}
+:root .mat-mdc-option .mdc-list-item__primary-text {
+  width: 100%;
 }
 :root .mat-mdc-option-active {
   background-color: var(--bg-color-a) !important;
