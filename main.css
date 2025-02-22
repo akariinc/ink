@@ -21444,6 +21444,9 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 :root .mat-mdc-autocomplete-panel {
   padding: var(--v-gap-xs) 0 !important;
 }
+:root .mat-mdc-autocomplete-panel.specimen-container {
+  padding: var(--v-gap-xs) !important;
+}
 :root .mat-mdc-option {
   min-height: 0 !important;
   padding: 0 !important;
