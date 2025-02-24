@@ -16912,6 +16912,10 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .el-Plan_Back span {
   opacity: 0.6;
 }
+* {
+  scrollbar-color: rgba(128, 128, 128, 0.25) transparent;
+}
+
 :root {
   --serif-font: "Cormorant Infant";
   --sans-serif-font: Outfit;
@@ -17278,15 +17282,27 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --h-list-m-padding-x: 0.62rem;
   --h-list-m-padding-y: 0.63rem;
   --h-list-m-padding: var(--h-list-m-padding-x) var(--h-list-m-padding-y);
+  --shadow-s-y: 2px;
+  --shadow-s-blur: 4px;
+  --shadow-s-opacity: 0.2;
+  --shadow-s: 0 var(--shadow-s-y) var(--shadow-s-blur) rgba(0, 0, 0, var(--shadow-s-opacity));
+  --shadow-m-y: 2px;
+  --shadow-m-blur: 4px;
+  --shadow-m-opacity: 0.2;
+  --shadow-m: 0 var(--shadow-m-y) var(--shadow-m-blur) rgba(0, 0, 0, var(--shadow-m-opacity));
+  --shadow-l-y: 2px;
+  --shadow-l-blur: 4px;
+  --shadow-l-opacity: 0.2;
+  --shadow-l: 0 var(--shadow-l-y) var(--shadow-l-blur) rgba(0, 0, 0, var(--shadow-l-opacity));
   --h-list-m-gap: 0.4rem;
-  --v-gap-xs: 0.82rem;
-  --v-gap-s: 1.68rem;
-  --v-gap-m: 1.83rem;
+  --v-gap-xs: 0.69rem;
+  --v-gap-s: 0.98rem;
+  --v-gap-m: 1.65rem;
   --v-gap-l: 3rem;
   --v-gap-xl: 3.5rem;
-  --h-gap-xs: 0.85rem;
-  --h-gap-s: 2.8rem;
-  --h-gap-m: 2.89rem;
+  --h-gap-xs: 0.56rem;
+  --h-gap-s: 1.07rem;
+  --h-gap-m: 1.99rem;
   --h-gap-l: 3.21rem;
   --h-gap-xl: 4.23rem;
 }
@@ -21420,6 +21436,22 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .v-padding-xl {
   padding-top: var(--v-gap-xl);
   padding-bottom: var(--v-gap-xl);
+}
+
+.shadow-0 {
+  box-shadow: none;
+}
+
+.shadow-s {
+  box-shadow: 0 var(--shadow-s-y) var(--shadow-s-blur) 0 rgba(0, 0, 0, var(--shadow-s-opacity));
+}
+
+.shadow-m {
+  box-shadow: 0 var(--shadow-m-y) var(--shadow-m-blur) 0 rgba(0, 0, 0, var(--shadow-m-opacity));
+}
+
+.shadow-l {
+  box-shadow: 0 var(--shadow-l-y) var(--shadow-l-blur) 0 rgba(0, 0, 0, var(--shadow-l-opacity));
 }
 
 .user-select-none {
