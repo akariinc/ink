@@ -1,4 +1,9 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Outfit&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
 @charset "UTF-8";
 /* Mixin
@@ -1758,6 +1763,11 @@ video {
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .outline-none{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1904,7 +1914,9 @@ video {
   key: string;
 }
 :root {
-  --font-sans: "" ;
+  --font-sans: "";
+  --border-width: 1px;
+  --border-width-bold: 2px;
   --background: 0 0% 100%;
   --foreground: 240 10% 3.9%;
   --card: 0 0% 100%;
@@ -3347,6 +3359,102 @@ i {
 
 .fg-info {
   color: var(--info-color);
+}
+
+.border-fg {
+  border-color: var(--fg-color);
+}
+
+.border-fg-a {
+  border-color: var(--fg-color-a);
+}
+
+.border-fg-b {
+  border-color: var(--fg-color-b);
+}
+
+.border-fg-c {
+  border-color: var(--fg-color-c);
+}
+
+.border-fg-dark {
+  border-color: var(--fg-dark-color);
+}
+
+.border-fg-dark-a {
+  border-color: var(--fg-dark-color-a);
+}
+
+.border-fg-dark-b {
+  border-color: var(--fg-dark-color-b);
+}
+
+.border-fg-dark-c {
+  border-color: var(--fg-dark-color-c);
+}
+
+.border-fg-primary {
+  border-color: var(--primary-color);
+}
+
+.border-fg-primary-a {
+  border-color: var(--primary-color-a);
+}
+
+.border-fg-primary-b {
+  border-color: var(--primary-color-b);
+}
+
+.border-fg-primary-c {
+  border-color: var(--primary-color-c);
+}
+
+.border-fg-accent-a {
+  border-color: var(--accent-color-a);
+}
+
+.border-fg-accent-b {
+  border-color: var(--accent-color-b);
+}
+
+.border-fg-accent-c {
+  border-color: var(--accent-color-c);
+}
+
+.border-fg-accent-d {
+  border-color: var(--accent-color-d);
+}
+
+.border-fg-accent-e {
+  border-color: var(--accent-color-e);
+}
+
+.border-fg-accent-f {
+  border-color: var(--accent-color-f);
+}
+
+.border-fg-accent-g {
+  border-color: var(--accent-color-g);
+}
+
+.border-fg-accent-h {
+  border-color: var(--accent-color-h);
+}
+
+.border-fg-valid {
+  border-color: var(--valid-color);
+}
+
+.border-fg-invalid {
+  border-color: var(--invalid-color);
+}
+
+.border-fg-notify {
+  border-color: var(--notify-color);
+}
+
+.border-fg-info {
+  border-color: var(--info-color);
 }
 
 .weak {
@@ -6436,6 +6544,11 @@ video {
 .shadow-sm{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .outline-none{
@@ -16991,7 +17104,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --mono-medium-bold-font-size: 1.475rem;
   --mono-medium-bold-letter-spacing: 0em;
   --mono-medium-bold-line-height: 1.48em;
-  --sans-medium-bold-font-family: Outfit;
+  --sans-medium-bold-font-family: Inter;
   --sans-medium-bold-text-transform: none;
   --sans-medium-bold-font-weight: 600;
   --sans-medium-bold-font-size: 1.525rem;
@@ -17055,8 +17168,8 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --button-s-padding-y: 0.49rem;
   --button-s-padding: var(--button-s-padding-x) var(--button-s-padding-y);
   --button-s-corner-radius: 0.5rem;
-  --button-m-padding-x: 1.16rem;
-  --button-m-padding-y: 0.73rem;
+  --button-m-padding-x: 1.17rem;
+  --button-m-padding-y: 0.53rem;
   --button-m-padding: var(--button-m-padding-x) var(--button-m-padding-y);
   --button-m-corner-radius: 0.51rem;
   --button-l-padding-x: 2.5rem;
@@ -17067,8 +17180,8 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --round-button-s-padding-y: 0.58rem;
   --round-button-s-padding: var(--round-button-s-padding-x) var(--round-button-s-padding-y);
   --round-button-s-corner-radius: 1.63rem;
-  --round-button-m-padding-x: 2.13rem;
-  --round-button-m-padding-y: 1.39rem;
+  --round-button-m-padding-x: 1.86rem;
+  --round-button-m-padding-y: 0.91rem;
   --round-button-m-padding: var(--round-button-m-padding-x) var(--round-button-m-padding-y);
   --round-button-m-corner-radius: 2.48rem;
   --round-button-l-padding-x: 2.85rem;
@@ -17076,34 +17189,34 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --round-button-l-padding: var(--round-button-l-padding-x) var(--round-button-l-padding-y);
   --round-button-l-corner-radius: 3.22rem;
   --bg-color-hue: 263.4;
-  --bg-color-saturation: 41.5%;
+  --bg-color-saturation: 41%;
   --bg-color-lightness: 99.25%;
   --bg-color-opacity: 1;
   --bg-color: hsla(var(--bg-color-hue), var(--bg-color-saturation), var(--bg-color-lightness), var(--bg-color-opacity));
-  --bg-color-a-hue: 205.8;
-  --bg-color-a-saturation: 1%;
-  --bg-color-a-lightness: 93.25%;
+  --bg-color-a-hue: 330.6;
+  --bg-color-a-saturation: 3.5%;
+  --bg-color-a-lightness: 94%;
   --bg-color-a-opacity: 1;
   --bg-color-a: hsla(var(--bg-color-a-hue), var(--bg-color-a-saturation), var(--bg-color-a-lightness), var(--bg-color-a-opacity));
-  --bg-color-b-hue: 177.8;
-  --bg-color-b-saturation: 7.75%;
+  --bg-color-b-hue: 180.2;
+  --bg-color-b-saturation: 0.25%;
   --bg-color-b-lightness: 85.65%;
   --bg-color-b-opacity: 1;
   --bg-color-b: hsla(var(--bg-color-b-hue), var(--bg-color-b-saturation), var(--bg-color-b-lightness), var(--bg-color-b-opacity));
-  --bg-color-c-hue: 218.6;
-  --bg-color-c-saturation: 18.75%;
+  --bg-color-c-hue: 184.2;
+  --bg-color-c-saturation: 3%;
   --bg-color-c-lightness: 79.4%;
   --bg-color-c-opacity: 1;
   --bg-color-c: hsla(var(--bg-color-c-hue), var(--bg-color-c-saturation), var(--bg-color-c-lightness), var(--bg-color-c-opacity));
   --bg-dark-color-hue: 7.4;
   --bg-dark-color-saturation: 0%;
-  --bg-dark-color-lightness: 13.5%;
+  --bg-dark-color-lightness: 23.25%;
   --bg-dark-color-opacity: 1;
   --bg-dark-color: hsla(var(--bg-dark-color-hue), var(--bg-dark-color-saturation), var(--bg-dark-color-lightness), var(--bg-dark-color-opacity));
-  --bg-dark-color-a-hue: 343.4;
-  --bg-dark-color-a-saturation: 14.35%;
-  --bg-dark-color-a-lightness: 13.25%;
-  --bg-dark-color-a-opacity: 0.85;
+  --bg-dark-color-a-hue: 9;
+  --bg-dark-color-a-saturation: 2.1%;
+  --bg-dark-color-a-lightness: 29.5%;
+  --bg-dark-color-a-opacity: 1;
   --bg-dark-color-a: hsla(var(--bg-dark-color-a-hue), var(--bg-dark-color-a-saturation), var(--bg-dark-color-a-lightness), var(--bg-dark-color-a-opacity));
   --bg-dark-color-b-hue: 343.4;
   --bg-dark-color-b-saturation: 1.6%;
@@ -17282,16 +17395,16 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --h-list-m-padding-x: 0.62rem;
   --h-list-m-padding-y: 0.63rem;
   --h-list-m-padding: var(--h-list-m-padding-x) var(--h-list-m-padding-y);
-  --shadow-s-y: 2px;
-  --shadow-s-blur: 4px;
-  --shadow-s-opacity: 0.2;
+  --shadow-s-y: 3.3px;
+  --shadow-s-blur: 6.4px;
+  --shadow-s-opacity: 0.21;
   --shadow-s: 0 var(--shadow-s-y) var(--shadow-s-blur) rgba(0, 0, 0, var(--shadow-s-opacity));
-  --shadow-m-y: 2px;
-  --shadow-m-blur: 4px;
-  --shadow-m-opacity: 0.2;
+  --shadow-m-y: 4.4px;
+  --shadow-m-blur: 12.6px;
+  --shadow-m-opacity: 0.18;
   --shadow-m: 0 var(--shadow-m-y) var(--shadow-m-blur) rgba(0, 0, 0, var(--shadow-m-opacity));
-  --shadow-l-y: 2px;
-  --shadow-l-blur: 4px;
+  --shadow-l-y: 8.1px;
+  --shadow-l-blur: 26.3px;
   --shadow-l-opacity: 0.2;
   --shadow-l: 0 var(--shadow-l-y) var(--shadow-l-blur) rgba(0, 0, 0, var(--shadow-l-opacity));
   --h-list-m-gap: 0.4rem;
@@ -17308,7 +17421,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 
 .border {
-  border-width: 1px;
+  border-width: var(--border-width);
   border-style: solid;
 }
 .border.fg {
@@ -17335,6 +17448,30 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .border.fg-dark-c {
   border-color: var(--fg-dark-color-c);
 }
+.border.border-fg {
+  border-color: var(--fg-color);
+}
+.border.border-fg-a {
+  border-color: var(--fg-color-a);
+}
+.border.border-fg-b {
+  border-color: var(--fg-color-b);
+}
+.border.border-fg-c {
+  border-color: var(--fg-color-c);
+}
+.border.border-fg-dark {
+  border-color: var(--fg-dark-color);
+}
+.border.border-fg-dark-a {
+  border-color: var(--fg-dark-color-a);
+}
+.border.border-fg-dark-b {
+  border-color: var(--fg-dark-color-b);
+}
+.border.border-fg-dark-c {
+  border-color: var(--fg-dark-color-c);
+}
 
 .stroke-icon {
   display: flex;
@@ -17359,52 +17496,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-m-stroke);
   border-style: solid;
 }
-.stroke-icon.fg svg path, .stroke-icon.fg svg ellipse, .stroke-icon.fg svg circle, .stroke-icon.fg svg rect {
+.stroke-icon.fg svg path, .stroke-icon.fg svg ellipse, .stroke-icon.fg svg circle, .stroke-icon.fg svg rect, .fg > .stroke-icon svg path, .fg > .stroke-icon svg ellipse, .fg > .stroke-icon svg circle, .fg > .stroke-icon svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.fg.border {
+.stroke-icon.fg.border, .fg > .stroke-icon.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.fg-a svg path, .stroke-icon.fg-a svg ellipse, .stroke-icon.fg-a svg circle, .stroke-icon.fg-a svg rect {
+.stroke-icon.fg-a svg path, .stroke-icon.fg-a svg ellipse, .stroke-icon.fg-a svg circle, .stroke-icon.fg-a svg rect, .fg-a > .stroke-icon svg path, .fg-a > .stroke-icon svg ellipse, .fg-a > .stroke-icon svg circle, .fg-a > .stroke-icon svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.fg-a.border {
+.stroke-icon.fg-a.border, .fg-a > .stroke-icon.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.fg-b svg path, .stroke-icon.fg-b svg ellipse, .stroke-icon.fg-b svg circle, .stroke-icon.fg-b svg rect {
+.stroke-icon.fg-b svg path, .stroke-icon.fg-b svg ellipse, .stroke-icon.fg-b svg circle, .stroke-icon.fg-b svg rect, .fg-b > .stroke-icon svg path, .fg-b > .stroke-icon svg ellipse, .fg-b > .stroke-icon svg circle, .fg-b > .stroke-icon svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.fg-b.border {
+.stroke-icon.fg-b.border, .fg-b > .stroke-icon.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.fg-c svg path, .stroke-icon.fg-c svg ellipse, .stroke-icon.fg-c svg circle, .stroke-icon.fg-c svg rect {
+.stroke-icon.fg-c svg path, .stroke-icon.fg-c svg ellipse, .stroke-icon.fg-c svg circle, .stroke-icon.fg-c svg rect, .fg-c > .stroke-icon svg path, .fg-c > .stroke-icon svg ellipse, .fg-c > .stroke-icon svg circle, .fg-c > .stroke-icon svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.fg-c.border {
+.stroke-icon.fg-c.border, .fg-c > .stroke-icon.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.fg-dark svg path, .stroke-icon.fg-dark svg ellipse, .stroke-icon.fg-dark svg circle, .stroke-icon.fg-dark svg rect {
+.stroke-icon.fg-dark svg path, .stroke-icon.fg-dark svg ellipse, .stroke-icon.fg-dark svg circle, .stroke-icon.fg-dark svg rect, .fg-dark > .stroke-icon svg path, .fg-dark > .stroke-icon svg ellipse, .fg-dark > .stroke-icon svg circle, .fg-dark > .stroke-icon svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.fg-dark.border {
+.stroke-icon.fg-dark.border, .fg-dark > .stroke-icon.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.fg-dark-a svg path, .stroke-icon.fg-dark-a svg ellipse, .stroke-icon.fg-dark-a svg circle, .stroke-icon.fg-dark-a svg rect {
+.stroke-icon.fg-dark-a svg path, .stroke-icon.fg-dark-a svg ellipse, .stroke-icon.fg-dark-a svg circle, .stroke-icon.fg-dark-a svg rect, .fg-dark-a > .stroke-icon svg path, .fg-dark-a > .stroke-icon svg ellipse, .fg-dark-a > .stroke-icon svg circle, .fg-dark-a > .stroke-icon svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.fg-dark-a.border {
+.stroke-icon.fg-dark-a.border, .fg-dark-a > .stroke-icon.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.fg-dark-b svg path, .stroke-icon.fg-dark-b svg ellipse, .stroke-icon.fg-dark-b svg circle, .stroke-icon.fg-dark-b svg rect {
+.stroke-icon.fg-dark-b svg path, .stroke-icon.fg-dark-b svg ellipse, .stroke-icon.fg-dark-b svg circle, .stroke-icon.fg-dark-b svg rect, .fg-dark-b > .stroke-icon svg path, .fg-dark-b > .stroke-icon svg ellipse, .fg-dark-b > .stroke-icon svg circle, .fg-dark-b > .stroke-icon svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.fg-dark-b.border {
+.stroke-icon.fg-dark-b.border, .fg-dark-b > .stroke-icon.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.fg-dark-c svg path, .stroke-icon.fg-dark-c svg ellipse, .stroke-icon.fg-dark-c svg circle, .stroke-icon.fg-dark-c svg rect {
+.stroke-icon.fg-dark-c svg path, .stroke-icon.fg-dark-c svg ellipse, .stroke-icon.fg-dark-c svg circle, .stroke-icon.fg-dark-c svg rect, .fg-dark-c > .stroke-icon svg path, .fg-dark-c > .stroke-icon svg ellipse, .fg-dark-c > .stroke-icon svg circle, .fg-dark-c > .stroke-icon svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.fg-dark-c.border {
+.stroke-icon.fg-dark-c.border, .fg-dark-c > .stroke-icon.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon svg {
@@ -17446,52 +17583,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-xs-stroke);
   border-style: solid;
 }
-.stroke-icon.xs.fg svg path, .stroke-icon.xs.fg svg ellipse, .stroke-icon.xs.fg svg circle, .stroke-icon.xs.fg svg rect {
+.stroke-icon.xs.fg svg path, .stroke-icon.xs.fg svg ellipse, .stroke-icon.xs.fg svg circle, .stroke-icon.xs.fg svg rect, .fg > .stroke-icon.xs svg path, .fg > .stroke-icon.xs svg ellipse, .fg > .stroke-icon.xs svg circle, .fg > .stroke-icon.xs svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.xs.fg.border {
+.stroke-icon.xs.fg.border, .fg > .stroke-icon.xs.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.xs.fg-a svg path, .stroke-icon.xs.fg-a svg ellipse, .stroke-icon.xs.fg-a svg circle, .stroke-icon.xs.fg-a svg rect {
+.stroke-icon.xs.fg-a svg path, .stroke-icon.xs.fg-a svg ellipse, .stroke-icon.xs.fg-a svg circle, .stroke-icon.xs.fg-a svg rect, .fg-a > .stroke-icon.xs svg path, .fg-a > .stroke-icon.xs svg ellipse, .fg-a > .stroke-icon.xs svg circle, .fg-a > .stroke-icon.xs svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.xs.fg-a.border {
+.stroke-icon.xs.fg-a.border, .fg-a > .stroke-icon.xs.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.xs.fg-b svg path, .stroke-icon.xs.fg-b svg ellipse, .stroke-icon.xs.fg-b svg circle, .stroke-icon.xs.fg-b svg rect {
+.stroke-icon.xs.fg-b svg path, .stroke-icon.xs.fg-b svg ellipse, .stroke-icon.xs.fg-b svg circle, .stroke-icon.xs.fg-b svg rect, .fg-b > .stroke-icon.xs svg path, .fg-b > .stroke-icon.xs svg ellipse, .fg-b > .stroke-icon.xs svg circle, .fg-b > .stroke-icon.xs svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.xs.fg-b.border {
+.stroke-icon.xs.fg-b.border, .fg-b > .stroke-icon.xs.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.xs.fg-c svg path, .stroke-icon.xs.fg-c svg ellipse, .stroke-icon.xs.fg-c svg circle, .stroke-icon.xs.fg-c svg rect {
+.stroke-icon.xs.fg-c svg path, .stroke-icon.xs.fg-c svg ellipse, .stroke-icon.xs.fg-c svg circle, .stroke-icon.xs.fg-c svg rect, .fg-c > .stroke-icon.xs svg path, .fg-c > .stroke-icon.xs svg ellipse, .fg-c > .stroke-icon.xs svg circle, .fg-c > .stroke-icon.xs svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.xs.fg-c.border {
+.stroke-icon.xs.fg-c.border, .fg-c > .stroke-icon.xs.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.xs.fg-dark svg path, .stroke-icon.xs.fg-dark svg ellipse, .stroke-icon.xs.fg-dark svg circle, .stroke-icon.xs.fg-dark svg rect {
+.stroke-icon.xs.fg-dark svg path, .stroke-icon.xs.fg-dark svg ellipse, .stroke-icon.xs.fg-dark svg circle, .stroke-icon.xs.fg-dark svg rect, .fg-dark > .stroke-icon.xs svg path, .fg-dark > .stroke-icon.xs svg ellipse, .fg-dark > .stroke-icon.xs svg circle, .fg-dark > .stroke-icon.xs svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.xs.fg-dark.border {
+.stroke-icon.xs.fg-dark.border, .fg-dark > .stroke-icon.xs.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.xs.fg-dark-a svg path, .stroke-icon.xs.fg-dark-a svg ellipse, .stroke-icon.xs.fg-dark-a svg circle, .stroke-icon.xs.fg-dark-a svg rect {
+.stroke-icon.xs.fg-dark-a svg path, .stroke-icon.xs.fg-dark-a svg ellipse, .stroke-icon.xs.fg-dark-a svg circle, .stroke-icon.xs.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.xs svg path, .fg-dark-a > .stroke-icon.xs svg ellipse, .fg-dark-a > .stroke-icon.xs svg circle, .fg-dark-a > .stroke-icon.xs svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.xs.fg-dark-a.border {
+.stroke-icon.xs.fg-dark-a.border, .fg-dark-a > .stroke-icon.xs.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.xs.fg-dark-b svg path, .stroke-icon.xs.fg-dark-b svg ellipse, .stroke-icon.xs.fg-dark-b svg circle, .stroke-icon.xs.fg-dark-b svg rect {
+.stroke-icon.xs.fg-dark-b svg path, .stroke-icon.xs.fg-dark-b svg ellipse, .stroke-icon.xs.fg-dark-b svg circle, .stroke-icon.xs.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.xs svg path, .fg-dark-b > .stroke-icon.xs svg ellipse, .fg-dark-b > .stroke-icon.xs svg circle, .fg-dark-b > .stroke-icon.xs svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.xs.fg-dark-b.border {
+.stroke-icon.xs.fg-dark-b.border, .fg-dark-b > .stroke-icon.xs.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.xs.fg-dark-c svg path, .stroke-icon.xs.fg-dark-c svg ellipse, .stroke-icon.xs.fg-dark-c svg circle, .stroke-icon.xs.fg-dark-c svg rect {
+.stroke-icon.xs.fg-dark-c svg path, .stroke-icon.xs.fg-dark-c svg ellipse, .stroke-icon.xs.fg-dark-c svg circle, .stroke-icon.xs.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.xs svg path, .fg-dark-c > .stroke-icon.xs svg ellipse, .fg-dark-c > .stroke-icon.xs svg circle, .fg-dark-c > .stroke-icon.xs svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.xs.fg-dark-c.border {
+.stroke-icon.xs.fg-dark-c.border, .fg-dark-c > .stroke-icon.xs.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.xs svg {
@@ -17533,52 +17670,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-s-stroke);
   border-style: solid;
 }
-.stroke-icon.s.fg svg path, .stroke-icon.s.fg svg ellipse, .stroke-icon.s.fg svg circle, .stroke-icon.s.fg svg rect {
+.stroke-icon.s.fg svg path, .stroke-icon.s.fg svg ellipse, .stroke-icon.s.fg svg circle, .stroke-icon.s.fg svg rect, .fg > .stroke-icon.s svg path, .fg > .stroke-icon.s svg ellipse, .fg > .stroke-icon.s svg circle, .fg > .stroke-icon.s svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.s.fg.border {
+.stroke-icon.s.fg.border, .fg > .stroke-icon.s.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.s.fg-a svg path, .stroke-icon.s.fg-a svg ellipse, .stroke-icon.s.fg-a svg circle, .stroke-icon.s.fg-a svg rect {
+.stroke-icon.s.fg-a svg path, .stroke-icon.s.fg-a svg ellipse, .stroke-icon.s.fg-a svg circle, .stroke-icon.s.fg-a svg rect, .fg-a > .stroke-icon.s svg path, .fg-a > .stroke-icon.s svg ellipse, .fg-a > .stroke-icon.s svg circle, .fg-a > .stroke-icon.s svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.s.fg-a.border {
+.stroke-icon.s.fg-a.border, .fg-a > .stroke-icon.s.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.s.fg-b svg path, .stroke-icon.s.fg-b svg ellipse, .stroke-icon.s.fg-b svg circle, .stroke-icon.s.fg-b svg rect {
+.stroke-icon.s.fg-b svg path, .stroke-icon.s.fg-b svg ellipse, .stroke-icon.s.fg-b svg circle, .stroke-icon.s.fg-b svg rect, .fg-b > .stroke-icon.s svg path, .fg-b > .stroke-icon.s svg ellipse, .fg-b > .stroke-icon.s svg circle, .fg-b > .stroke-icon.s svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.s.fg-b.border {
+.stroke-icon.s.fg-b.border, .fg-b > .stroke-icon.s.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.s.fg-c svg path, .stroke-icon.s.fg-c svg ellipse, .stroke-icon.s.fg-c svg circle, .stroke-icon.s.fg-c svg rect {
+.stroke-icon.s.fg-c svg path, .stroke-icon.s.fg-c svg ellipse, .stroke-icon.s.fg-c svg circle, .stroke-icon.s.fg-c svg rect, .fg-c > .stroke-icon.s svg path, .fg-c > .stroke-icon.s svg ellipse, .fg-c > .stroke-icon.s svg circle, .fg-c > .stroke-icon.s svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.s.fg-c.border {
+.stroke-icon.s.fg-c.border, .fg-c > .stroke-icon.s.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.s.fg-dark svg path, .stroke-icon.s.fg-dark svg ellipse, .stroke-icon.s.fg-dark svg circle, .stroke-icon.s.fg-dark svg rect {
+.stroke-icon.s.fg-dark svg path, .stroke-icon.s.fg-dark svg ellipse, .stroke-icon.s.fg-dark svg circle, .stroke-icon.s.fg-dark svg rect, .fg-dark > .stroke-icon.s svg path, .fg-dark > .stroke-icon.s svg ellipse, .fg-dark > .stroke-icon.s svg circle, .fg-dark > .stroke-icon.s svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.s.fg-dark.border {
+.stroke-icon.s.fg-dark.border, .fg-dark > .stroke-icon.s.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.s.fg-dark-a svg path, .stroke-icon.s.fg-dark-a svg ellipse, .stroke-icon.s.fg-dark-a svg circle, .stroke-icon.s.fg-dark-a svg rect {
+.stroke-icon.s.fg-dark-a svg path, .stroke-icon.s.fg-dark-a svg ellipse, .stroke-icon.s.fg-dark-a svg circle, .stroke-icon.s.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.s svg path, .fg-dark-a > .stroke-icon.s svg ellipse, .fg-dark-a > .stroke-icon.s svg circle, .fg-dark-a > .stroke-icon.s svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.s.fg-dark-a.border {
+.stroke-icon.s.fg-dark-a.border, .fg-dark-a > .stroke-icon.s.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.s.fg-dark-b svg path, .stroke-icon.s.fg-dark-b svg ellipse, .stroke-icon.s.fg-dark-b svg circle, .stroke-icon.s.fg-dark-b svg rect {
+.stroke-icon.s.fg-dark-b svg path, .stroke-icon.s.fg-dark-b svg ellipse, .stroke-icon.s.fg-dark-b svg circle, .stroke-icon.s.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.s svg path, .fg-dark-b > .stroke-icon.s svg ellipse, .fg-dark-b > .stroke-icon.s svg circle, .fg-dark-b > .stroke-icon.s svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.s.fg-dark-b.border {
+.stroke-icon.s.fg-dark-b.border, .fg-dark-b > .stroke-icon.s.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.s.fg-dark-c svg path, .stroke-icon.s.fg-dark-c svg ellipse, .stroke-icon.s.fg-dark-c svg circle, .stroke-icon.s.fg-dark-c svg rect {
+.stroke-icon.s.fg-dark-c svg path, .stroke-icon.s.fg-dark-c svg ellipse, .stroke-icon.s.fg-dark-c svg circle, .stroke-icon.s.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.s svg path, .fg-dark-c > .stroke-icon.s svg ellipse, .fg-dark-c > .stroke-icon.s svg circle, .fg-dark-c > .stroke-icon.s svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.s.fg-dark-c.border {
+.stroke-icon.s.fg-dark-c.border, .fg-dark-c > .stroke-icon.s.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.s svg {
@@ -17620,52 +17757,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-m-stroke);
   border-style: solid;
 }
-.stroke-icon.m.fg svg path, .stroke-icon.m.fg svg ellipse, .stroke-icon.m.fg svg circle, .stroke-icon.m.fg svg rect {
+.stroke-icon.m.fg svg path, .stroke-icon.m.fg svg ellipse, .stroke-icon.m.fg svg circle, .stroke-icon.m.fg svg rect, .fg > .stroke-icon.m svg path, .fg > .stroke-icon.m svg ellipse, .fg > .stroke-icon.m svg circle, .fg > .stroke-icon.m svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.m.fg.border {
+.stroke-icon.m.fg.border, .fg > .stroke-icon.m.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.m.fg-a svg path, .stroke-icon.m.fg-a svg ellipse, .stroke-icon.m.fg-a svg circle, .stroke-icon.m.fg-a svg rect {
+.stroke-icon.m.fg-a svg path, .stroke-icon.m.fg-a svg ellipse, .stroke-icon.m.fg-a svg circle, .stroke-icon.m.fg-a svg rect, .fg-a > .stroke-icon.m svg path, .fg-a > .stroke-icon.m svg ellipse, .fg-a > .stroke-icon.m svg circle, .fg-a > .stroke-icon.m svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.m.fg-a.border {
+.stroke-icon.m.fg-a.border, .fg-a > .stroke-icon.m.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.m.fg-b svg path, .stroke-icon.m.fg-b svg ellipse, .stroke-icon.m.fg-b svg circle, .stroke-icon.m.fg-b svg rect {
+.stroke-icon.m.fg-b svg path, .stroke-icon.m.fg-b svg ellipse, .stroke-icon.m.fg-b svg circle, .stroke-icon.m.fg-b svg rect, .fg-b > .stroke-icon.m svg path, .fg-b > .stroke-icon.m svg ellipse, .fg-b > .stroke-icon.m svg circle, .fg-b > .stroke-icon.m svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.m.fg-b.border {
+.stroke-icon.m.fg-b.border, .fg-b > .stroke-icon.m.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.m.fg-c svg path, .stroke-icon.m.fg-c svg ellipse, .stroke-icon.m.fg-c svg circle, .stroke-icon.m.fg-c svg rect {
+.stroke-icon.m.fg-c svg path, .stroke-icon.m.fg-c svg ellipse, .stroke-icon.m.fg-c svg circle, .stroke-icon.m.fg-c svg rect, .fg-c > .stroke-icon.m svg path, .fg-c > .stroke-icon.m svg ellipse, .fg-c > .stroke-icon.m svg circle, .fg-c > .stroke-icon.m svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.m.fg-c.border {
+.stroke-icon.m.fg-c.border, .fg-c > .stroke-icon.m.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.m.fg-dark svg path, .stroke-icon.m.fg-dark svg ellipse, .stroke-icon.m.fg-dark svg circle, .stroke-icon.m.fg-dark svg rect {
+.stroke-icon.m.fg-dark svg path, .stroke-icon.m.fg-dark svg ellipse, .stroke-icon.m.fg-dark svg circle, .stroke-icon.m.fg-dark svg rect, .fg-dark > .stroke-icon.m svg path, .fg-dark > .stroke-icon.m svg ellipse, .fg-dark > .stroke-icon.m svg circle, .fg-dark > .stroke-icon.m svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.m.fg-dark.border {
+.stroke-icon.m.fg-dark.border, .fg-dark > .stroke-icon.m.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.m.fg-dark-a svg path, .stroke-icon.m.fg-dark-a svg ellipse, .stroke-icon.m.fg-dark-a svg circle, .stroke-icon.m.fg-dark-a svg rect {
+.stroke-icon.m.fg-dark-a svg path, .stroke-icon.m.fg-dark-a svg ellipse, .stroke-icon.m.fg-dark-a svg circle, .stroke-icon.m.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.m svg path, .fg-dark-a > .stroke-icon.m svg ellipse, .fg-dark-a > .stroke-icon.m svg circle, .fg-dark-a > .stroke-icon.m svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.m.fg-dark-a.border {
+.stroke-icon.m.fg-dark-a.border, .fg-dark-a > .stroke-icon.m.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.m.fg-dark-b svg path, .stroke-icon.m.fg-dark-b svg ellipse, .stroke-icon.m.fg-dark-b svg circle, .stroke-icon.m.fg-dark-b svg rect {
+.stroke-icon.m.fg-dark-b svg path, .stroke-icon.m.fg-dark-b svg ellipse, .stroke-icon.m.fg-dark-b svg circle, .stroke-icon.m.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.m svg path, .fg-dark-b > .stroke-icon.m svg ellipse, .fg-dark-b > .stroke-icon.m svg circle, .fg-dark-b > .stroke-icon.m svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.m.fg-dark-b.border {
+.stroke-icon.m.fg-dark-b.border, .fg-dark-b > .stroke-icon.m.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.m.fg-dark-c svg path, .stroke-icon.m.fg-dark-c svg ellipse, .stroke-icon.m.fg-dark-c svg circle, .stroke-icon.m.fg-dark-c svg rect {
+.stroke-icon.m.fg-dark-c svg path, .stroke-icon.m.fg-dark-c svg ellipse, .stroke-icon.m.fg-dark-c svg circle, .stroke-icon.m.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.m svg path, .fg-dark-c > .stroke-icon.m svg ellipse, .fg-dark-c > .stroke-icon.m svg circle, .fg-dark-c > .stroke-icon.m svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.m.fg-dark-c.border {
+.stroke-icon.m.fg-dark-c.border, .fg-dark-c > .stroke-icon.m.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.m svg {
@@ -17707,52 +17844,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-l-stroke);
   border-style: solid;
 }
-.stroke-icon.l.fg svg path, .stroke-icon.l.fg svg ellipse, .stroke-icon.l.fg svg circle, .stroke-icon.l.fg svg rect {
+.stroke-icon.l.fg svg path, .stroke-icon.l.fg svg ellipse, .stroke-icon.l.fg svg circle, .stroke-icon.l.fg svg rect, .fg > .stroke-icon.l svg path, .fg > .stroke-icon.l svg ellipse, .fg > .stroke-icon.l svg circle, .fg > .stroke-icon.l svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.l.fg.border {
+.stroke-icon.l.fg.border, .fg > .stroke-icon.l.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.l.fg-a svg path, .stroke-icon.l.fg-a svg ellipse, .stroke-icon.l.fg-a svg circle, .stroke-icon.l.fg-a svg rect {
+.stroke-icon.l.fg-a svg path, .stroke-icon.l.fg-a svg ellipse, .stroke-icon.l.fg-a svg circle, .stroke-icon.l.fg-a svg rect, .fg-a > .stroke-icon.l svg path, .fg-a > .stroke-icon.l svg ellipse, .fg-a > .stroke-icon.l svg circle, .fg-a > .stroke-icon.l svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.l.fg-a.border {
+.stroke-icon.l.fg-a.border, .fg-a > .stroke-icon.l.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.l.fg-b svg path, .stroke-icon.l.fg-b svg ellipse, .stroke-icon.l.fg-b svg circle, .stroke-icon.l.fg-b svg rect {
+.stroke-icon.l.fg-b svg path, .stroke-icon.l.fg-b svg ellipse, .stroke-icon.l.fg-b svg circle, .stroke-icon.l.fg-b svg rect, .fg-b > .stroke-icon.l svg path, .fg-b > .stroke-icon.l svg ellipse, .fg-b > .stroke-icon.l svg circle, .fg-b > .stroke-icon.l svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.l.fg-b.border {
+.stroke-icon.l.fg-b.border, .fg-b > .stroke-icon.l.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.l.fg-c svg path, .stroke-icon.l.fg-c svg ellipse, .stroke-icon.l.fg-c svg circle, .stroke-icon.l.fg-c svg rect {
+.stroke-icon.l.fg-c svg path, .stroke-icon.l.fg-c svg ellipse, .stroke-icon.l.fg-c svg circle, .stroke-icon.l.fg-c svg rect, .fg-c > .stroke-icon.l svg path, .fg-c > .stroke-icon.l svg ellipse, .fg-c > .stroke-icon.l svg circle, .fg-c > .stroke-icon.l svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.l.fg-c.border {
+.stroke-icon.l.fg-c.border, .fg-c > .stroke-icon.l.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.l.fg-dark svg path, .stroke-icon.l.fg-dark svg ellipse, .stroke-icon.l.fg-dark svg circle, .stroke-icon.l.fg-dark svg rect {
+.stroke-icon.l.fg-dark svg path, .stroke-icon.l.fg-dark svg ellipse, .stroke-icon.l.fg-dark svg circle, .stroke-icon.l.fg-dark svg rect, .fg-dark > .stroke-icon.l svg path, .fg-dark > .stroke-icon.l svg ellipse, .fg-dark > .stroke-icon.l svg circle, .fg-dark > .stroke-icon.l svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.l.fg-dark.border {
+.stroke-icon.l.fg-dark.border, .fg-dark > .stroke-icon.l.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.l.fg-dark-a svg path, .stroke-icon.l.fg-dark-a svg ellipse, .stroke-icon.l.fg-dark-a svg circle, .stroke-icon.l.fg-dark-a svg rect {
+.stroke-icon.l.fg-dark-a svg path, .stroke-icon.l.fg-dark-a svg ellipse, .stroke-icon.l.fg-dark-a svg circle, .stroke-icon.l.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.l svg path, .fg-dark-a > .stroke-icon.l svg ellipse, .fg-dark-a > .stroke-icon.l svg circle, .fg-dark-a > .stroke-icon.l svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.l.fg-dark-a.border {
+.stroke-icon.l.fg-dark-a.border, .fg-dark-a > .stroke-icon.l.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.l.fg-dark-b svg path, .stroke-icon.l.fg-dark-b svg ellipse, .stroke-icon.l.fg-dark-b svg circle, .stroke-icon.l.fg-dark-b svg rect {
+.stroke-icon.l.fg-dark-b svg path, .stroke-icon.l.fg-dark-b svg ellipse, .stroke-icon.l.fg-dark-b svg circle, .stroke-icon.l.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.l svg path, .fg-dark-b > .stroke-icon.l svg ellipse, .fg-dark-b > .stroke-icon.l svg circle, .fg-dark-b > .stroke-icon.l svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.l.fg-dark-b.border {
+.stroke-icon.l.fg-dark-b.border, .fg-dark-b > .stroke-icon.l.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.l.fg-dark-c svg path, .stroke-icon.l.fg-dark-c svg ellipse, .stroke-icon.l.fg-dark-c svg circle, .stroke-icon.l.fg-dark-c svg rect {
+.stroke-icon.l.fg-dark-c svg path, .stroke-icon.l.fg-dark-c svg ellipse, .stroke-icon.l.fg-dark-c svg circle, .stroke-icon.l.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.l svg path, .fg-dark-c > .stroke-icon.l svg ellipse, .fg-dark-c > .stroke-icon.l svg circle, .fg-dark-c > .stroke-icon.l svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.l.fg-dark-c.border {
+.stroke-icon.l.fg-dark-c.border, .fg-dark-c > .stroke-icon.l.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.l svg {
@@ -17794,52 +17931,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-xl-stroke);
   border-style: solid;
 }
-.stroke-icon.xl.fg svg path, .stroke-icon.xl.fg svg ellipse, .stroke-icon.xl.fg svg circle, .stroke-icon.xl.fg svg rect {
+.stroke-icon.xl.fg svg path, .stroke-icon.xl.fg svg ellipse, .stroke-icon.xl.fg svg circle, .stroke-icon.xl.fg svg rect, .fg > .stroke-icon.xl svg path, .fg > .stroke-icon.xl svg ellipse, .fg > .stroke-icon.xl svg circle, .fg > .stroke-icon.xl svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.xl.fg.border {
+.stroke-icon.xl.fg.border, .fg > .stroke-icon.xl.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.xl.fg-a svg path, .stroke-icon.xl.fg-a svg ellipse, .stroke-icon.xl.fg-a svg circle, .stroke-icon.xl.fg-a svg rect {
+.stroke-icon.xl.fg-a svg path, .stroke-icon.xl.fg-a svg ellipse, .stroke-icon.xl.fg-a svg circle, .stroke-icon.xl.fg-a svg rect, .fg-a > .stroke-icon.xl svg path, .fg-a > .stroke-icon.xl svg ellipse, .fg-a > .stroke-icon.xl svg circle, .fg-a > .stroke-icon.xl svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.xl.fg-a.border {
+.stroke-icon.xl.fg-a.border, .fg-a > .stroke-icon.xl.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.xl.fg-b svg path, .stroke-icon.xl.fg-b svg ellipse, .stroke-icon.xl.fg-b svg circle, .stroke-icon.xl.fg-b svg rect {
+.stroke-icon.xl.fg-b svg path, .stroke-icon.xl.fg-b svg ellipse, .stroke-icon.xl.fg-b svg circle, .stroke-icon.xl.fg-b svg rect, .fg-b > .stroke-icon.xl svg path, .fg-b > .stroke-icon.xl svg ellipse, .fg-b > .stroke-icon.xl svg circle, .fg-b > .stroke-icon.xl svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.xl.fg-b.border {
+.stroke-icon.xl.fg-b.border, .fg-b > .stroke-icon.xl.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.xl.fg-c svg path, .stroke-icon.xl.fg-c svg ellipse, .stroke-icon.xl.fg-c svg circle, .stroke-icon.xl.fg-c svg rect {
+.stroke-icon.xl.fg-c svg path, .stroke-icon.xl.fg-c svg ellipse, .stroke-icon.xl.fg-c svg circle, .stroke-icon.xl.fg-c svg rect, .fg-c > .stroke-icon.xl svg path, .fg-c > .stroke-icon.xl svg ellipse, .fg-c > .stroke-icon.xl svg circle, .fg-c > .stroke-icon.xl svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.xl.fg-c.border {
+.stroke-icon.xl.fg-c.border, .fg-c > .stroke-icon.xl.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.xl.fg-dark svg path, .stroke-icon.xl.fg-dark svg ellipse, .stroke-icon.xl.fg-dark svg circle, .stroke-icon.xl.fg-dark svg rect {
+.stroke-icon.xl.fg-dark svg path, .stroke-icon.xl.fg-dark svg ellipse, .stroke-icon.xl.fg-dark svg circle, .stroke-icon.xl.fg-dark svg rect, .fg-dark > .stroke-icon.xl svg path, .fg-dark > .stroke-icon.xl svg ellipse, .fg-dark > .stroke-icon.xl svg circle, .fg-dark > .stroke-icon.xl svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.xl.fg-dark.border {
+.stroke-icon.xl.fg-dark.border, .fg-dark > .stroke-icon.xl.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.xl.fg-dark-a svg path, .stroke-icon.xl.fg-dark-a svg ellipse, .stroke-icon.xl.fg-dark-a svg circle, .stroke-icon.xl.fg-dark-a svg rect {
+.stroke-icon.xl.fg-dark-a svg path, .stroke-icon.xl.fg-dark-a svg ellipse, .stroke-icon.xl.fg-dark-a svg circle, .stroke-icon.xl.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.xl svg path, .fg-dark-a > .stroke-icon.xl svg ellipse, .fg-dark-a > .stroke-icon.xl svg circle, .fg-dark-a > .stroke-icon.xl svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.xl.fg-dark-a.border {
+.stroke-icon.xl.fg-dark-a.border, .fg-dark-a > .stroke-icon.xl.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.xl.fg-dark-b svg path, .stroke-icon.xl.fg-dark-b svg ellipse, .stroke-icon.xl.fg-dark-b svg circle, .stroke-icon.xl.fg-dark-b svg rect {
+.stroke-icon.xl.fg-dark-b svg path, .stroke-icon.xl.fg-dark-b svg ellipse, .stroke-icon.xl.fg-dark-b svg circle, .stroke-icon.xl.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.xl svg path, .fg-dark-b > .stroke-icon.xl svg ellipse, .fg-dark-b > .stroke-icon.xl svg circle, .fg-dark-b > .stroke-icon.xl svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.xl.fg-dark-b.border {
+.stroke-icon.xl.fg-dark-b.border, .fg-dark-b > .stroke-icon.xl.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.xl.fg-dark-c svg path, .stroke-icon.xl.fg-dark-c svg ellipse, .stroke-icon.xl.fg-dark-c svg circle, .stroke-icon.xl.fg-dark-c svg rect {
+.stroke-icon.xl.fg-dark-c svg path, .stroke-icon.xl.fg-dark-c svg ellipse, .stroke-icon.xl.fg-dark-c svg circle, .stroke-icon.xl.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.xl svg path, .fg-dark-c > .stroke-icon.xl svg ellipse, .fg-dark-c > .stroke-icon.xl svg circle, .fg-dark-c > .stroke-icon.xl svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.xl.fg-dark-c.border {
+.stroke-icon.xl.fg-dark-c.border, .fg-dark-c > .stroke-icon.xl.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.xl svg {
@@ -17881,52 +18018,52 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-width: var(--icon-xxl-stroke);
   border-style: solid;
 }
-.stroke-icon.xxl.fg svg path, .stroke-icon.xxl.fg svg ellipse, .stroke-icon.xxl.fg svg circle, .stroke-icon.xxl.fg svg rect {
+.stroke-icon.xxl.fg svg path, .stroke-icon.xxl.fg svg ellipse, .stroke-icon.xxl.fg svg circle, .stroke-icon.xxl.fg svg rect, .fg > .stroke-icon.xxl svg path, .fg > .stroke-icon.xxl svg ellipse, .fg > .stroke-icon.xxl svg circle, .fg > .stroke-icon.xxl svg rect {
   stroke: var(--fg-color);
 }
-.stroke-icon.xxl.fg.border {
+.stroke-icon.xxl.fg.border, .fg > .stroke-icon.xxl.border {
   border-color: var(--fg-color);
 }
-.stroke-icon.xxl.fg-a svg path, .stroke-icon.xxl.fg-a svg ellipse, .stroke-icon.xxl.fg-a svg circle, .stroke-icon.xxl.fg-a svg rect {
+.stroke-icon.xxl.fg-a svg path, .stroke-icon.xxl.fg-a svg ellipse, .stroke-icon.xxl.fg-a svg circle, .stroke-icon.xxl.fg-a svg rect, .fg-a > .stroke-icon.xxl svg path, .fg-a > .stroke-icon.xxl svg ellipse, .fg-a > .stroke-icon.xxl svg circle, .fg-a > .stroke-icon.xxl svg rect {
   stroke: var(--fg-color-a);
 }
-.stroke-icon.xxl.fg-a.border {
+.stroke-icon.xxl.fg-a.border, .fg-a > .stroke-icon.xxl.border {
   border-color: var(--fg-color-a);
 }
-.stroke-icon.xxl.fg-b svg path, .stroke-icon.xxl.fg-b svg ellipse, .stroke-icon.xxl.fg-b svg circle, .stroke-icon.xxl.fg-b svg rect {
+.stroke-icon.xxl.fg-b svg path, .stroke-icon.xxl.fg-b svg ellipse, .stroke-icon.xxl.fg-b svg circle, .stroke-icon.xxl.fg-b svg rect, .fg-b > .stroke-icon.xxl svg path, .fg-b > .stroke-icon.xxl svg ellipse, .fg-b > .stroke-icon.xxl svg circle, .fg-b > .stroke-icon.xxl svg rect {
   stroke: var(--fg-color-b);
 }
-.stroke-icon.xxl.fg-b.border {
+.stroke-icon.xxl.fg-b.border, .fg-b > .stroke-icon.xxl.border {
   border-color: var(--fg-color-b);
 }
-.stroke-icon.xxl.fg-c svg path, .stroke-icon.xxl.fg-c svg ellipse, .stroke-icon.xxl.fg-c svg circle, .stroke-icon.xxl.fg-c svg rect {
+.stroke-icon.xxl.fg-c svg path, .stroke-icon.xxl.fg-c svg ellipse, .stroke-icon.xxl.fg-c svg circle, .stroke-icon.xxl.fg-c svg rect, .fg-c > .stroke-icon.xxl svg path, .fg-c > .stroke-icon.xxl svg ellipse, .fg-c > .stroke-icon.xxl svg circle, .fg-c > .stroke-icon.xxl svg rect {
   stroke: var(--fg-color-c);
 }
-.stroke-icon.xxl.fg-c.border {
+.stroke-icon.xxl.fg-c.border, .fg-c > .stroke-icon.xxl.border {
   border-color: var(--fg-color-c);
 }
-.stroke-icon.xxl.fg-dark svg path, .stroke-icon.xxl.fg-dark svg ellipse, .stroke-icon.xxl.fg-dark svg circle, .stroke-icon.xxl.fg-dark svg rect {
+.stroke-icon.xxl.fg-dark svg path, .stroke-icon.xxl.fg-dark svg ellipse, .stroke-icon.xxl.fg-dark svg circle, .stroke-icon.xxl.fg-dark svg rect, .fg-dark > .stroke-icon.xxl svg path, .fg-dark > .stroke-icon.xxl svg ellipse, .fg-dark > .stroke-icon.xxl svg circle, .fg-dark > .stroke-icon.xxl svg rect {
   stroke: var(--fg-dark-color);
 }
-.stroke-icon.xxl.fg-dark.border {
+.stroke-icon.xxl.fg-dark.border, .fg-dark > .stroke-icon.xxl.border {
   border-color: var(--fg-dark-color);
 }
-.stroke-icon.xxl.fg-dark-a svg path, .stroke-icon.xxl.fg-dark-a svg ellipse, .stroke-icon.xxl.fg-dark-a svg circle, .stroke-icon.xxl.fg-dark-a svg rect {
+.stroke-icon.xxl.fg-dark-a svg path, .stroke-icon.xxl.fg-dark-a svg ellipse, .stroke-icon.xxl.fg-dark-a svg circle, .stroke-icon.xxl.fg-dark-a svg rect, .fg-dark-a > .stroke-icon.xxl svg path, .fg-dark-a > .stroke-icon.xxl svg ellipse, .fg-dark-a > .stroke-icon.xxl svg circle, .fg-dark-a > .stroke-icon.xxl svg rect {
   stroke: var(--fg-dark-color-a);
 }
-.stroke-icon.xxl.fg-dark-a.border {
+.stroke-icon.xxl.fg-dark-a.border, .fg-dark-a > .stroke-icon.xxl.border {
   border-color: var(--fg-dark-color-a);
 }
-.stroke-icon.xxl.fg-dark-b svg path, .stroke-icon.xxl.fg-dark-b svg ellipse, .stroke-icon.xxl.fg-dark-b svg circle, .stroke-icon.xxl.fg-dark-b svg rect {
+.stroke-icon.xxl.fg-dark-b svg path, .stroke-icon.xxl.fg-dark-b svg ellipse, .stroke-icon.xxl.fg-dark-b svg circle, .stroke-icon.xxl.fg-dark-b svg rect, .fg-dark-b > .stroke-icon.xxl svg path, .fg-dark-b > .stroke-icon.xxl svg ellipse, .fg-dark-b > .stroke-icon.xxl svg circle, .fg-dark-b > .stroke-icon.xxl svg rect {
   stroke: var(--fg-dark-color-b);
 }
-.stroke-icon.xxl.fg-dark-b.border {
+.stroke-icon.xxl.fg-dark-b.border, .fg-dark-b > .stroke-icon.xxl.border {
   border-color: var(--fg-dark-color-b);
 }
-.stroke-icon.xxl.fg-dark-c svg path, .stroke-icon.xxl.fg-dark-c svg ellipse, .stroke-icon.xxl.fg-dark-c svg circle, .stroke-icon.xxl.fg-dark-c svg rect {
+.stroke-icon.xxl.fg-dark-c svg path, .stroke-icon.xxl.fg-dark-c svg ellipse, .stroke-icon.xxl.fg-dark-c svg circle, .stroke-icon.xxl.fg-dark-c svg rect, .fg-dark-c > .stroke-icon.xxl svg path, .fg-dark-c > .stroke-icon.xxl svg ellipse, .fg-dark-c > .stroke-icon.xxl svg circle, .fg-dark-c > .stroke-icon.xxl svg rect {
   stroke: var(--fg-dark-color-c);
 }
-.stroke-icon.xxl.fg-dark-c.border {
+.stroke-icon.xxl.fg-dark-c.border, .fg-dark-c > .stroke-icon.xxl.border {
   border-color: var(--fg-dark-color-c);
 }
 .stroke-icon.xxl svg {
@@ -19605,7 +19742,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 
 .chip.border {
-  border-width: 1px;
+  border-width: var(--border-width);
   border-style: solid;
 }
 .chip-s {
@@ -19637,7 +19774,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 
 .button.border {
-  border-width: 1px;
+  border-width: var(--border-width);
   border-style: solid;
 }
 .button-s {
@@ -19660,7 +19797,7 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 
 .round-button.border {
-  border-width: 1px;
+  border-width: var(--border-width);
   border-style: solid;
 }
 .round-button-s {
@@ -20324,6 +20461,26 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   border-radius: 50%;
 }
 
+.r0-left {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.r0-right {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.r0-top {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.r0-bottom {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -20643,6 +20800,33 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 }
 .h-gap-xl > .fixed-container.w50p {
   width: calc(100% / 2 - var(--h-gap-xl) * (2 - 1) / 2);
+}
+.fixed-container.w10p {
+  width: 10%;
+}
+.fixed-container.w20p {
+  width: 20%;
+}
+.fixed-container.w30p {
+  width: 30%;
+}
+.fixed-container.w40p {
+  width: 40%;
+}
+.fixed-container.w50p {
+  width: 50%;
+}
+.fixed-container.w60p {
+  width: 60%;
+}
+.fixed-container.w70p {
+  width: 70%;
+}
+.fixed-container.w80p {
+  width: 80%;
+}
+.fixed-container.w90p {
+  width: 90%;
 }
 .fixed-container.w100p {
   width: 100%;
@@ -21435,6 +21619,94 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 
 .v-padding-xl {
   padding-top: var(--v-gap-xl);
+  padding-bottom: var(--v-gap-xl);
+}
+
+.top-padding-0 {
+  padding-top: 0;
+}
+
+.top-padding-1 {
+  padding-top: 1px;
+}
+
+.top-padding-2 {
+  padding-top: 2px;
+}
+
+.top-padding-3 {
+  padding-top: 3px;
+}
+
+.top-padding-4 {
+  padding-top: 4px;
+}
+
+.top-padding-5 {
+  padding-top: 5px;
+}
+
+.top-padding-xs {
+  padding-top: var(--v-gap-xs);
+}
+
+.top-padding-s {
+  padding-top: var(--v-gap-s);
+}
+
+.top-padding-m {
+  padding-top: var(--v-gap-m);
+}
+
+.top-padding-l {
+  padding-top: var(--v-gap-l);
+}
+
+.top-padding-xl {
+  padding-top: var(--v-gap-xl);
+}
+
+.bottom-padding-0 {
+  padding-bottom: 0;
+}
+
+.bottom-padding-1 {
+  padding-bottom: 1px;
+}
+
+.bottom-padding-2 {
+  padding-bottom: 2px;
+}
+
+.bottom-padding-3 {
+  padding-bottom: 3px;
+}
+
+.bottom-padding-4 {
+  padding-bottom: 4px;
+}
+
+.bottom-padding-5 {
+  padding-bottom: 5px;
+}
+
+.bottom-padding-xs {
+  padding-bottom: var(--v-gap-xs);
+}
+
+.bottom-padding-s {
+  padding-bottom: var(--v-gap-s);
+}
+
+.bottom-padding-m {
+  padding-bottom: var(--v-gap-m);
+}
+
+.bottom-padding-l {
+  padding-bottom: var(--v-gap-l);
+}
+
+.bottom-padding-xl {
   padding-bottom: var(--v-gap-xl);
 }
 
