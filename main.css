@@ -17268,6 +17268,11 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --fg-dark-color-c-lightness: 36.6%;
   --fg-dark-color-c-opacity: 1;
   --fg-dark-color-c: hsla(var(--fg-dark-color-c-hue), var(--fg-dark-color-c-saturation), var(--fg-dark-color-c-lightness), var(--fg-dark-color-c-opacity));
+  --border-color-hue: 297.4;
+  --border-color-saturation: 0.25%;
+  --border-color-lightness: 1%;
+  --border-color-opacity: 0.41;
+  --border-color: hsla(var(--border-color-hue), var(--border-color-saturation), var(--border-color-lightness), var(--border-color-opacity));
   --primary-color-hue: 346.2;
   --primary-color-saturation: 43.25%;
   --primary-color-lightness: 71.35%;
@@ -17358,15 +17363,15 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --icon-xs-size: 1.58rem;
   --icon-xs-background-ratio: 0.815;
   --icon-xs-background-radius: 4px;
-  --icon-s-stroke: 0.9px;
+  --icon-s-stroke: 0.8px;
   --icon-s-size: 2.36rem;
   --icon-s-background-ratio: 0.665;
   --icon-s-background-radius: 2.7px;
-  --icon-m-stroke: 0.9px;
+  --icon-m-stroke: 0.8px;
   --icon-m-size: 3.25rem;
   --icon-m-background-ratio: 0.625;
   --icon-m-background-radius: 4.4px;
-  --icon-l-stroke: 1.3px;
+  --icon-l-stroke: 0.8px;
   --icon-l-size: 4.34rem;
   --icon-l-background-ratio: 0.53;
   --icon-l-background-radius: 2.9px;
@@ -17378,6 +17383,53 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
   --icon-xxl-size: 12rem;
   --icon-xxl-background-ratio: 0.46;
   --icon-xxl-background-radius: 12.4px;
+  --input-regular-horizontal-padding: 1.7rem;
+  --input-regular-outer-v-padding: 0.73rem;
+  --input-regular-bottom-padding: 1.44rem;
+  --input-regular-inner-v-padding: 0.66rem;
+  --input-border-color-hue: 297.4;
+  --input-border-color-saturation: 0.25%;
+  --input-border-color-lightness: 1%;
+  --input-border-color: hsl(var(--input-border-color-hue), var(--input-border-color-saturation), var(--input-border-color-lightness));
+  --input-border-color-opacity: 0.17;
+  --input-border-color-focused-opacity: 0.8;
+  --input-border-color-valid-hue: 297.4;
+  --input-border-color-valid-saturation: 0.25%;
+  --input-border-color-valid-lightness: 1%;
+  --input-border-color-valid: hsl(var(--input-border-color-valid-hue), var(--input-border-color-valid-saturation), var(--input-border-color-valid-lightness));
+  --input-border-color-valid-opacity: 0.17;
+  --input-border-color-invalid-hue: 297.4;
+  --input-border-color-invalid-saturation: 0.25%;
+  --input-border-color-invalid-lightness: 1%;
+  --input-border-color-invalid: hsl(var(--input-border-color-invalid-hue), var(--input-border-color-invalid-saturation), var(--input-border-color-invalid-lightness));
+  --input-border-color-invalid-opacity: 0.17;
+  --input-background-color-hue: 7.8;
+  --input-background-color-saturation: 0.25%;
+  --input-background-color-lightness: 93%;
+  --input-background-color-opacity: 0.41;
+  --input-background-color: hsla(var(--input-background-color-hue), var(--input-background-color-saturation), var(--input-background-color-lightness), var(--input-background-color-opacity));
+  --input-placeholder-color-hue: 297.4;
+  --input-placeholder-color-saturation: 0.25%;
+  --input-placeholder-color-lightness: 1%;
+  --input-placeholder-color-opacity: 0.41;
+  --input-placeholder-color: hsla(var(--input-placeholder-color-hue), var(--input-placeholder-color-saturation), var(--input-placeholder-color-lightness), var(--input-placeholder-color-opacity));
+  --input-label-font-font-family: var(--sans-serif-font);
+  --input-label-font-text-transform: none;
+  --input-label-font-font-weight: normal;
+  --input-label-font-font-size: 1.65rem;
+  --input-label-font-letter-spacing: 0.015em;
+  --input-label-font-line-height: 1.12em;
+  --input-placeholder-font-font-family: var(--sans-serif-font);
+  --input-placeholder-font-text-transform: none;
+  --input-placeholder-font-font-weight: normal;
+  --input-placeholder-font-font-size: 1.65rem;
+  --input-placeholder-font-letter-spacing: 0.015em;
+  --input-placeholder-font-line-height: 1.12em;
+  --input-label-color-hue: 297.4;
+  --input-label-color-saturation: 0.25%;
+  --input-label-color-lightness: 1%;
+  --input-label-color-opacity: 0.41;
+  --input-label-color: hsla(var(--input-label-color-hue), var(--input-label-color-saturation), var(--input-label-color-lightness), var(--input-label-color-opacity));
   --v-list-s-padding-x: 0.4rem;
   --v-list-s-padding-y: 0.4rem;
   --v-list-s-padding: var(--v-list-s-padding-x) var(--v-list-s-padding-y);
@@ -21729,6 +21781,73 @@ html:lang(en) .el-ScreeningHeader_TitleSmall h1, html.okraAdmin-Html:lang(en) .e
 .user-select-none {
   -webkit-user-select: none;
           user-select: none;
+}
+
+.input-regular-h-padding {
+  padding-left: var(--input-regular-horizontal-padding);
+  padding-right: var(--input-regular-horizontal-padding);
+}
+
+.input-regular-left-padding {
+  padding-left: var(--input-regular-horizontal-padding);
+}
+
+.input-regular-right-padding {
+  padding-right: var(--input-regular-horizontal-padding);
+}
+
+.input-regular-outer-v-padding {
+  padding-top: var(--input-regular-outer-v-padding);
+  padding-bottom: var(--input-regular-outer-v-padding);
+}
+
+.input-regular-inner-v-padding {
+  padding-top: var(--input-regular-inner-v-padding);
+  padding-bottom: var(--input-regular-inner-v-padding);
+}
+
+.input-regular-label {
+  color: var(--input-regular-label-color);
+  font-family: var(--input-regular-label-font);
+  font-size: var(--input-regular-label-font-size);
+  line-height: var(--input-regular-label-line-height);
+  letter-spacing: var(--input-regular-label-letter-spacing);
+  font-weight: var(--input-regular-label-font-weight);
+}
+
+.input-border {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: hsla(var(--input-border-color-hue), var(--input-border-color-saturation), var(--input-border-color-lightness), var(--input-border-color-opacity));
+  transition: outline-width 0.1s, outline-color 0.1s, box-shadow 0.1s;
+}
+.input-border.focused {
+  outline-width: 2px;
+  outline-color: hsla(var(--input-border-color-focused-hue), var(--input-border-color-focused-saturation), var(--input-border-color-focused-lightness), var(--input-border-color-focused-opacity));
+}
+.input-border.valid {
+  outline-color: hsla(var(--input-border-color-valid-hue), var(--input-border-color-valid-saturation), var(--input-border-color-valid-lightness), var(--input-border-color-opacity));
+}
+.input-border.invalid {
+  outline-color: hsla(var(--input-border-color-invalid-hue), var(--input-border-color-invalid-saturation), var(--input-border-color-invalid-lightness), var(--input-border-color-opacity));
+}
+
+.input-background {
+  background-color: var(--input-background-color);
+}
+
+.input-group > div {
+  position: relative;
+}
+.input-group > div:not(:last-child)::after {
+  content: "";
+  display: block;
+  width: 1px;
+  background-color: hsla(var(--input-border-color-hue), var(--input-border-color-saturation), var(--input-border-color-lightness), var(--input-border-color-opacity));
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 /*
