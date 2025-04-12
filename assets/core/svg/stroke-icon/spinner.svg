@@ -1,0 +1,42 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+  <radialGradient id="a7" cx=".66" fx=".66" cy=".3125" fy=".3125" gradientTransform="scale(1.5)">
+    <stop offset="0" stop-color="#FF156D"/>
+    <stop offset=".3" stop-color="#FF156D" stop-opacity=".9"/>
+    <stop offset=".6" stop-color="#FF156D" stop-opacity=".6"/>
+    <stop offset=".8" stop-color="#FF156D" stop-opacity=".3"/>
+    <stop offset="1" stop-color="#FF156D" stop-opacity="0"/>
+  </radialGradient>
+
+  <circle
+    transform-origin="13 13"
+    fill="none"
+    stroke="url(#a7)"
+    stroke-width="3.25"
+    stroke-linecap="round"
+    stroke-dasharray="26 130"
+    stroke-dashoffset="0"
+    cx="13"
+    cy="13"
+    r="9.1">
+    <animateTransform
+      attributeName="transform"
+      type="rotate"
+      calcMode="spline"
+      dur="1.5s"
+      values="360;0"
+      keyTimes="0;1"
+      keySplines="0 0 1 1"
+      repeatCount="indefinite"/>
+  </circle>
+
+  <circle
+    transform-origin="13 13"
+    fill="none"
+    opacity=".2"
+    stroke="#FF156D"
+    stroke-width="3.25"
+    stroke-linecap="round"
+    cx="13"
+    cy="13"
+    r="9.1"/>
+</svg>
